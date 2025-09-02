@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tictactoe.app-mergeDebugResources-2:/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "com.example.tictactoe.app-mergeDebugResources-33:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "C:\\Users\\athar\\.gradle\\caches\\9.0-milestone-1\\transforms\\ef383254d7ed336647320bff66369b36\\transformed\\appcompat-1.6.1\\res\\values-en-rGB\\values-en-rGB.xml",

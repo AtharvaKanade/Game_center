@@ -25,6 +25,7 @@ drawable ic_tictactoe
 drawable ic_water_jug
 drawable tile_background
 drawable water_background
+drawable water_surface
 id backToHomeButton
 id backToMenuButton
 id bestMovesText
@@ -47,10 +48,12 @@ id jugACapacity
 id jugACard
 id jugACurrent
 id jugAWater
+id jugAWaterSurface
 id jugBCapacity
 id jugBCard
 id jugBCurrent
 id jugBWater
+id jugBWaterSurface
 id movesText
 id newGameButton
 id newPuzzleButton

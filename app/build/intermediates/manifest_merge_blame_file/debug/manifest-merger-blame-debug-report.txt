@@ -20,79 +20,79 @@
 15-->[androidx.core:core:1.12.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\6d3b3cb1ee12db3b50f8898ca61e50cf\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:5:5-44:19
+17-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:5:5-44:19
 18        android:allowBackup="true"
-18-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:6:9-35
+18-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.12.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\6d3b3cb1ee12db3b50f8898ca61e50cf\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:7:9-65
+20-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:8:9-54
+23-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:8:9-54
 24        android:icon="@mipmap/ic_launcher"
-24-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:9:9-43
+24-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:9:9-43
 25        android:label="@string/app_name"
-25-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:10:9-41
+25-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:10:9-41
 26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:11:9-54
+26-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:11:9-54
 27        android:supportsRtl="true"
-27-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:12:9-35
+27-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:12:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.TicTacToe" >
-29-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:13:9-47
+29-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:13:9-47
 30        <activity
-30-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:15:9-23:20
+30-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:15:9-23:20
 31            android:name="com.example.tictactoe.HomeActivity"
-31-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:16:13-41
+31-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:16:13-41
 32            android:exported="true"
-32-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:17:13-36
+32-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:17:13-36
 33            android:theme="@style/Theme.TicTacToe" >
-33-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:18:13-51
+33-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:18:13-51
 34            <intent-filter>
-34-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:19:13-22:29
+34-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:19:13-22:29
 35                <action android:name="android.intent.action.MAIN" />
-35-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:20:17-69
-35-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:20:25-66
+35-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:20:17-69
+35-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:20:25-66
 36
 37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:21:17-77
-37-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:21:27-74
+37-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:21:17-77
+37-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:21:27-74
 38            </intent-filter>
 39        </activity>
 40        <activity
-40-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:25:9-28:54
+40-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:25:9-28:54
 41            android:name="com.example.tictactoe.MainActivity"
-41-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:26:13-41
+41-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:26:13-41
 42            android:exported="false"
-42-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:27:13-37
+42-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:27:13-37
 43            android:theme="@style/Theme.TicTacToe" />
-43-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:28:13-51
+43-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:28:13-51
 44        <activity
-44-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:30:9-33:54
+44-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:30:9-33:54
 45            android:name="com.example.tictactoe.GameActivity"
-45-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:31:13-41
+45-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:31:13-41
 46            android:exported="false"
-46-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:32:13-37
+46-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:32:13-37
 47            android:theme="@style/Theme.TicTacToe" />
-47-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:33:13-51
+47-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:33:13-51
 48        <activity
-48-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:35:9-38:54
+48-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:35:9-38:54
 49            android:name="com.example.tictactoe.WaterJugActivity"
-49-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:36:13-45
+49-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:36:13-45
 50            android:exported="false"
-50-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:37:13-37
+50-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:37:13-37
 51            android:theme="@style/Theme.TicTacToe" />
-51-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:38:13-51
+51-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:38:13-51
 52        <activity
-52-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:40:9-43:54
+52-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:40:9-43:54
 53            android:name="com.example.tictactoe.EightPuzzleActivity"
-53-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:41:13-48
+53-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:41:13-48
 54            android:exported="false"
-54-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:42:13-37
+54-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:42:13-37
 55            android:theme="@style/Theme.TicTacToe" />
-55-->C:\Codes\2d game\app\src\main\AndroidManifest.xml:43:13-51
+55-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:43:13-51
 56
 57        <provider
 57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20

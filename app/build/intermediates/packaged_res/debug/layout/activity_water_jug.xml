@@ -86,14 +86,24 @@
 
             <View
                 android:id="@+id/jugAWater"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"
                 android:layout_marginTop="16dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
                 android:background="@drawable/water_background"
                 android:alpha="0.8" />
+
+            <!-- Water surface effect -->
+            <View
+                android:id="@+id/jugAWaterSurface"
+                android:layout_width="100dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/water_surface"
+                android:alpha="0.6"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/jugACurrent"
@@ -149,14 +159,23 @@
 
             <View
                 android:id="@+id/jugBWater"
-                android:layout_width="80dp"
+                android:layout_width="100dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
                 android:background="@drawable/water_background"
                 android:alpha="0.8" />
+
+            <!-- Water surface effect -->
+            <View
+                android:id="@+id/jugBWaterSurface"
+                android:layout_width="100dp"
+                android:layout_height="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/water_surface"
+                android:alpha="0.6"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/jugBCurrent"

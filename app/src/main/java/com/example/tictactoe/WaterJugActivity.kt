@@ -128,6 +128,7 @@ class WaterJugActivity : AppCompatActivity() {
             
             updateDisplay()
             updateWaterLevels()
+            updateButtonStates()
             checkWinCondition()
         } catch (e: Exception) {
             android.util.Log.e("WaterJug", "Error starting new puzzle", e)
@@ -155,10 +156,13 @@ class WaterJugActivity : AppCompatActivity() {
     private fun fillJugA() {
         try {
             if (gameSolved) return
+            if (jugACurrent >= jugACapacity) return // Don't fill if already full
+            
             jugACurrent = jugACapacity
             moveCount++
             updateDisplay()
             updateWaterLevels()
+            updateButtonStates()
             checkWinCondition()
             animateButton(binding.fillJugAButton)
         } catch (e: Exception) {
@@ -169,10 +173,13 @@ class WaterJugActivity : AppCompatActivity() {
     private fun emptyJugA() {
         try {
             if (gameSolved) return
+            if (jugACurrent <= 0) return // Don't empty if already empty
+            
             jugACurrent = 0
             moveCount++
             updateDisplay()
             updateWaterLevels()
+            updateButtonStates()
             checkWinCondition()
             animateButton(binding.emptyJugAButton)
         } catch (e: Exception) {
@@ -183,10 +190,13 @@ class WaterJugActivity : AppCompatActivity() {
     private fun fillJugB() {
         try {
             if (gameSolved) return
+            if (jugBCurrent >= jugBCapacity) return // Don't fill if already full
+            
             jugBCurrent = jugBCapacity
             moveCount++
             updateDisplay()
             updateWaterLevels()
+            updateButtonStates()
             checkWinCondition()
             animateButton(binding.fillJugBButton)
         } catch (e: Exception) {
@@ -197,10 +207,13 @@ class WaterJugActivity : AppCompatActivity() {
     private fun emptyJugB() {
         try {
             if (gameSolved) return
+            if (jugBCurrent <= 0) return // Don't empty if already empty
+            
             jugBCurrent = 0
             moveCount++
             updateDisplay()
             updateWaterLevels()
+            updateButtonStates()
             checkWinCondition()
             animateButton(binding.emptyJugBButton)
         } catch (e: Exception) {
@@ -221,6 +234,7 @@ class WaterJugActivity : AppCompatActivity() {
                 moveCount++
                 updateDisplay()
                 updateWaterLevels()
+                updateButtonStates()
                 checkWinCondition()
                 animateButton(binding.pourAtoBButton)
             }
@@ -242,6 +256,7 @@ class WaterJugActivity : AppCompatActivity() {
                 moveCount++
                 updateDisplay()
                 updateWaterLevels()
+                updateButtonStates()
                 checkWinCondition()
                 animateButton(binding.pourBtoAButton)
             }
@@ -286,8 +301,8 @@ class WaterJugActivity : AppCompatActivity() {
             
             // Update water level heights with smooth animation
             try {
-                // Calculate target heights (water area is approximately 120dp)
-                val maxWaterHeight = 120
+                // Make water much larger to fill containers properly
+                val maxWaterHeight = 140
                 val jugAHeight = (jugARatio * maxWaterHeight).toInt()
                 val jugBHeight = (jugBRatio * maxWaterHeight).toInt()
                 
@@ -468,6 +483,35 @@ class WaterJugActivity : AppCompatActivity() {
                 .start()
         } catch (e: Exception) {
             android.util.Log.e("WaterJug", "Error animating button", e)
+        }
+    }
+
+    private fun updateButtonStates() {
+        try {
+            // Only disable fill buttons when jugs are completely full
+            binding.fillJugAButton.isEnabled = jugACurrent < jugACapacity
+            binding.fillJugBButton.isEnabled = jugBCurrent < jugBCapacity
+            
+            // Only disable empty buttons when jugs are completely empty
+            binding.emptyJugAButton.isEnabled = jugACurrent > 0
+            binding.emptyJugBButton.isEnabled = jugBCurrent > 0
+            
+            // Only disable pour A to B button if A is empty
+            binding.pourAtoBButton.isEnabled = jugACurrent > 0
+            
+            // Only disable pour B to A button if B is empty
+            binding.pourBtoAButton.isEnabled = jugBCurrent > 0
+            
+            // Update button alpha based on enabled state
+            binding.fillJugAButton.alpha = if (binding.fillJugAButton.isEnabled) 1.0f else 0.5f
+            binding.fillJugBButton.alpha = if (binding.fillJugBButton.isEnabled) 1.0f else 0.5f
+            binding.emptyJugAButton.alpha = if (binding.emptyJugAButton.isEnabled) 1.0f else 0.5f
+            binding.emptyJugBButton.alpha = if (binding.emptyJugBButton.isEnabled) 1.0f else 0.5f
+            binding.pourAtoBButton.alpha = if (binding.pourAtoBButton.isEnabled) 1.0f else 0.5f
+            binding.pourBtoAButton.alpha = if (binding.pourBtoAButton.isEnabled) 1.0f else 0.5f
+            
+        } catch (e: Exception) {
+            android.util.Log.w("WaterJug", "Error updating button states", e)
         }
     }
 }

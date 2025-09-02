@@ -49,6 +49,9 @@ public final class ActivityWaterJugBinding implements ViewBinding {
   public final View jugAWater;
 
   @NonNull
+  public final View jugAWaterSurface;
+
+  @NonNull
   public final TextView jugBCapacity;
 
   @NonNull
@@ -59,6 +62,9 @@ public final class ActivityWaterJugBinding implements ViewBinding {
 
   @NonNull
   public final View jugBWater;
+
+  @NonNull
+  public final View jugBWaterSurface;
 
   @NonNull
   public final TextView movesText;
@@ -83,8 +89,9 @@ public final class ActivityWaterJugBinding implements ViewBinding {
       @NonNull MaterialButton emptyJugBButton, @NonNull MaterialButton fillJugAButton,
       @NonNull MaterialButton fillJugBButton, @NonNull TextView jugACapacity,
       @NonNull MaterialCardView jugACard, @NonNull TextView jugACurrent, @NonNull View jugAWater,
-      @NonNull TextView jugBCapacity, @NonNull MaterialCardView jugBCard,
-      @NonNull TextView jugBCurrent, @NonNull View jugBWater, @NonNull TextView movesText,
+      @NonNull View jugAWaterSurface, @NonNull TextView jugBCapacity,
+      @NonNull MaterialCardView jugBCard, @NonNull TextView jugBCurrent, @NonNull View jugBWater,
+      @NonNull View jugBWaterSurface, @NonNull TextView movesText,
       @NonNull MaterialButton newPuzzleButton, @NonNull MaterialButton pourAtoBButton,
       @NonNull MaterialButton pourBtoAButton, @NonNull TextView targetText,
       @NonNull TextView titleText) {
@@ -98,10 +105,12 @@ public final class ActivityWaterJugBinding implements ViewBinding {
     this.jugACard = jugACard;
     this.jugACurrent = jugACurrent;
     this.jugAWater = jugAWater;
+    this.jugAWaterSurface = jugAWaterSurface;
     this.jugBCapacity = jugBCapacity;
     this.jugBCard = jugBCard;
     this.jugBCurrent = jugBCurrent;
     this.jugBWater = jugBWater;
+    this.jugBWaterSurface = jugBWaterSurface;
     this.movesText = movesText;
     this.newPuzzleButton = newPuzzleButton;
     this.pourAtoBButton = pourAtoBButton;
@@ -191,6 +200,12 @@ public final class ActivityWaterJugBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.jugAWaterSurface;
+      View jugAWaterSurface = ViewBindings.findChildViewById(rootView, id);
+      if (jugAWaterSurface == null) {
+        break missingId;
+      }
+
       id = R.id.jugBCapacity;
       TextView jugBCapacity = ViewBindings.findChildViewById(rootView, id);
       if (jugBCapacity == null) {
@@ -212,6 +227,12 @@ public final class ActivityWaterJugBinding implements ViewBinding {
       id = R.id.jugBWater;
       View jugBWater = ViewBindings.findChildViewById(rootView, id);
       if (jugBWater == null) {
+        break missingId;
+      }
+
+      id = R.id.jugBWaterSurface;
+      View jugBWaterSurface = ViewBindings.findChildViewById(rootView, id);
+      if (jugBWaterSurface == null) {
         break missingId;
       }
 
@@ -253,8 +274,9 @@ public final class ActivityWaterJugBinding implements ViewBinding {
 
       return new ActivityWaterJugBinding((ConstraintLayout) rootView, backToHomeButton,
           emptyJugAButton, emptyJugBButton, fillJugAButton, fillJugBButton, jugACapacity, jugACard,
-          jugACurrent, jugAWater, jugBCapacity, jugBCard, jugBCurrent, jugBWater, movesText,
-          newPuzzleButton, pourAtoBButton, pourBtoAButton, targetText, titleText);
+          jugACurrent, jugAWater, jugAWaterSurface, jugBCapacity, jugBCard, jugBCurrent, jugBWater,
+          jugBWaterSurface, movesText, newPuzzleButton, pourAtoBButton, pourBtoAButton, targetText,
+          titleText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

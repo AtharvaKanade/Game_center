@@ -3099,6 +3099,7 @@ drawable tile_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable water_background
+drawable water_surface
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3350,10 +3351,12 @@ id jugACapacity
 id jugACard
 id jugACurrent
 id jugAWater
+id jugAWaterSurface
 id jugBCapacity
 id jugBCard
 id jugBCurrent
 id jugBWater
+id jugBWaterSurface
 id jumpToEnd
 id jumpToStart
 id labeled
