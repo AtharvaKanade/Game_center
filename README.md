@@ -5,6 +5,7 @@ A modern Android application featuring multiple classic games with beautiful Mat
 ## 🎮 **Available Games (3 Games)**
 
 ### 1. **Tic Tac Toe**
+
 - **Two Game Modes:**
   - VS Computer: Play against a strategic AI opponent
   - VS Friend: Play against another player on the same device
@@ -13,7 +14,8 @@ A modern Android application featuring multiple classic games with beautiful Mat
   - Prefers center and corner positions for optimal play
 - **Modern UI:** Clean grid layout with smooth animations
 
-### 2. **Water Jug Puzzle**     
+### 2. **Water Jug Puzzle**
+
 - **Classic Logic Puzzle:** Solve water jug problems with different capacities
 - **Dynamic Puzzles:** Randomly generated solvable puzzles
 - **Visual Water Effects:** Beautiful water animations with color intensity changes
@@ -21,6 +23,7 @@ A modern Android application featuring multiple classic games with beautiful Mat
 - **Move Counter:** Track your solution efficiency
 
 ### 3. **8 Puzzle Problem**
+
 - **Classic Sliding Puzzle:** Arrange numbered tiles in correct order
 - **3x3 Grid:** 8 numbered tiles + 1 empty space
 - **Goal State:** Arrange tiles from 1-8 with empty space at bottom-right
@@ -100,12 +103,14 @@ Game_center/
 ## 🎯 **Game Rules**
 
 ### **Tic Tac Toe**
+
 - Players take turns placing X and O on a 3x3 grid
 - First player to get 3 in a row (horizontally, vertically, or diagonally) wins
 - If all cells are filled without a winner, the game is a draw
 - X always goes first
 
 ### **Water Jug Puzzle**
+
 - You have two jugs with different capacities
 - Goal: Measure exactly the target amount using the jugs
 - Actions available:
@@ -116,6 +121,7 @@ Game_center/
 - Move counter tracks your solution efficiency
 
 ### **8 Puzzle Problem**
+
 - You have a 3x3 grid with 8 numbered tiles (1-8) and 1 empty space
 - Goal: Arrange the tiles in ascending order from 1-8 with empty space at bottom-right
 - Actions: Slide tiles into the empty space (only tiles adjacent to empty space can move)
@@ -126,6 +132,7 @@ Game_center/
 ## 🧠 **AI Strategy (Tic Tac Toe)**
 
 The computer player uses the following strategy (in order of priority):
+
 1. **Winning Move**: If the computer can win in one move, it takes it
 2. **Blocking Move**: If the opponent can win in one move, the computer blocks it
 3. **Center Position**: Prefers the center cell if available
@@ -145,11 +152,13 @@ You can easily customize the app by modifying:
 ## 🐛 **Troubleshooting**
 
 ### **Build Issues**
+
 - **Gradle sync errors**: Try `File → Invalidate Caches and Restart`
 - **Build failures**: Ensure correct Android SDK and build tools are installed
 - **File lock errors**: Stop Gradle daemons with `.\gradlew --stop`
 
 ### **Runtime Issues**
+
 - **App crashes**: Check that your device meets minimum API level requirement (26)
 - **Layout issues**: Verify device orientation and screen size compatibility
 - **Performance**: Close other apps to free up memory
@@ -157,6 +166,7 @@ You can easily customize the app by modifying:
 ## 📱 **App Icon**
 
 The app features a custom gamepad icon:
+
 - **Original Design**: Beautiful SVG gamepad with purple/blue color scheme
 - **Adaptive Icon**: Automatically adapts to different icon shapes (circle, square, rounded)
 - **Vector Drawable**: Scalable without quality loss
@@ -169,6 +179,7 @@ This project is open source and available under the MIT License.
 ## 🤝 **Contributing**
 
 We welcome contributions! Feel free to:
+
 - Submit bug reports and feature requests
 - Contribute code improvements
 - Add new games to the center
