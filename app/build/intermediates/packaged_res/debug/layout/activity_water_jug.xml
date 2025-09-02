@@ -66,6 +66,7 @@
             android:gravity="center"
             android:padding="16dp">
 
+            <!-- Fixed top labels -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -84,27 +85,36 @@
                 android:alpha="0.7"
                 android:layout_marginTop="4dp" />
 
-            <View
-                android:id="@+id/jugAWater"
-                android:layout_width="100dp"
-                android:layout_height="0dp"
+            <!-- Flexible water container with fixed height -->
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/water_background"
-                android:alpha="0.8" />
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
 
-            <!-- Water surface effect -->
-            <View
-                android:id="@+id/jugAWaterSurface"
-                android:layout_width="100dp"
-                android:layout_height="8dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/water_surface"
-                android:alpha="0.6"
-                android:visibility="gone" />
+                <!-- Water view - fills entire container, color intensity shows water level -->
+                <View
+                    android:id="@+id/jugAWater"
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/water_background"
+                    android:alpha="0.8" />
 
+                <!-- Water surface effect -->
+                <View
+                    android:id="@+id/jugAWaterSurface"
+                    android:layout_width="110dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top"
+                    android:background="@drawable/water_surface"
+                    android:alpha="0.6"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <!-- Fixed bottom label -->
             <TextView
                 android:id="@+id/jugACurrent"
                 android:layout_width="wrap_content"
@@ -139,6 +149,7 @@
             android:gravity="center"
             android:padding="16dp">
 
+            <!-- Fixed top labels -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -157,26 +168,35 @@
                 android:alpha="0.7"
                 android:layout_marginTop="4dp" />
 
-            <View
-                android:id="@+id/jugBWater"
-                android:layout_width="100dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/water_background"
-                android:alpha="0.8" />
+            <!-- Flexible water container with fixed height -->
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp">
 
-            <!-- Water surface effect -->
-            <View
-                android:id="@+id/jugBWaterSurface"
-                android:layout_width="100dp"
-                android:layout_height="8dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="4dp"
-                android:background="@drawable/water_surface"
-                android:alpha="0.6"
-                android:visibility="gone" />
+                <!-- Water view - fills entire container, color intensity shows water level -->
+                <View
+                    android:id="@+id/jugBWater"
+                    android:layout_width="110dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/water_background"
+                    android:alpha="0.8" />
 
+                <!-- Water surface effect -->
+                <View
+                    android:id="@+id/jugBWaterSurface"
+                    android:layout_width="110dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top"
+                    android:background="@drawable/water_surface"
+                    android:alpha="0.6"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+            <!-- Fixed bottom label -->
             <TextView
                 android:id="@+id/jugBCurrent"
                 android:layout_width="wrap_content"

@@ -2,8 +2,6 @@ package com.example.tictactoe
 
 import android.os.Bundle
 import android.view.View
-import android.view.ViewGroup
-import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -280,9 +278,9 @@ class WaterJugActivity : AppCompatActivity() {
     
     private fun updateWaterLevels() {
         try {
-            // Validate that views exist and are accessible
-            if (!::binding.isInitialized || binding.jugAWater == null || binding.jugBWater == null) {
-                android.util.Log.w("WaterJug", "Views not accessible, skipping water level update")
+            // Validate that binding is initialized
+            if (!::binding.isInitialized) {
+                android.util.Log.w("WaterJug", "Binding not initialized, skipping water level update")
                 return
             }
             
@@ -299,23 +297,7 @@ class WaterJugActivity : AppCompatActivity() {
                 0f
             }
             
-            // Update water level heights with smooth animation
-            try {
-                // Make water much larger to fill containers properly
-                val maxWaterHeight = 140
-                val jugAHeight = (jugARatio * maxWaterHeight).toInt()
-                val jugBHeight = (jugBRatio * maxWaterHeight).toInt()
-                
-                // Animate water level changes
-                animateWaterLevel(binding.jugAWater, jugAHeight, 500)
-                animateWaterLevel(binding.jugBWater, jugBHeight, 500)
-                
-                android.util.Log.d("WaterJug", "Water heights - A: ${jugAHeight}dp (${jugARatio}), B: ${jugBHeight}dp (${jugBRatio})")
-            } catch (e: Exception) {
-                android.util.Log.w("WaterJug", "Could not update water heights, continuing with other updates", e)
-            }
-            
-            // Set water colors based on jug type and fullness
+            // Set water colors based on jug type and fullness (color intensity shows water level)
             try {
                 // Create dynamic color state lists based on water level
                 val jugAColor = createWaterColor(R.color.primary, jugARatio)
@@ -323,6 +305,9 @@ class WaterJugActivity : AppCompatActivity() {
                 
                 binding.jugAWater.setBackgroundTintList(jugAColor)
                 binding.jugBWater.setBackgroundTintList(jugBColor)
+                
+                // Update water surface effects visibility
+                updateWaterSurfaceEffects(jugARatio, jugBRatio)
                 
                 android.util.Log.d("WaterJug", "Water colors updated with intensity based on fullness")
             } catch (e: Exception) {
@@ -335,64 +320,7 @@ class WaterJugActivity : AppCompatActivity() {
         }
     }
     
-    private fun animateWaterLevel(waterView: View, targetHeight: Int, duration: Long) {
-        try {
-            // Get current layout params
-            val layoutParams = waterView.layoutParams
-            if (layoutParams == null) {
-                android.util.Log.w("WaterJug", "Layout params null, cannot animate water level")
-                return
-            }
-            
-            val currentHeight = layoutParams.height
-            val animator = android.animation.ValueAnimator.ofInt(currentHeight, targetHeight)
-            
-            animator.duration = duration
-            animator.interpolator = android.view.animation.DecelerateInterpolator()
-            
-            animator.addUpdateListener { animation ->
-                try {
-                    val animatedHeight = animation.animatedValue as Int
-                    layoutParams.height = animatedHeight
-                    waterView.requestLayout()
-                } catch (e: Exception) {
-                    android.util.Log.w("WaterJug", "Error updating animated height", e)
-                }
-            }
-            
-            // Add completion listener for visual feedback
-            animator.addListener(object : android.animation.Animator.AnimatorListener {
-                override fun onAnimationStart(animation: android.animation.Animator) {
-                    // Add a subtle scale effect when animation starts
-                    waterView.animate()
-                        .scaleX(1.05f)
-                        .scaleY(1.05f)
-                        .setDuration(200)
-                        .start()
-                }
-                
-                override fun onAnimationEnd(animation: android.animation.Animator) {
-                    // Return to normal scale when animation ends
-                    waterView.animate()
-                        .scaleX(1f)
-                        .scaleY(1f)
-                        .setDuration(200)
-                        .start()
-                    
-                    // Add a subtle wave effect after water settles
-                    addWaterWaveEffect(waterView)
-                }
-                
-                override fun onAnimationCancel(animation: android.animation.Animator) {}
-                override fun onAnimationRepeat(animation: android.animation.Animator) {}
-            })
-            
-            animator.start()
-            
-        } catch (e: Exception) {
-            android.util.Log.e("WaterJug", "Error animating water level", e)
-        }
-    }
+
     
     private fun createWaterColor(baseColorRes: Int, fullnessRatio: Float): android.content.res.ColorStateList {
         try {
@@ -512,6 +440,17 @@ class WaterJugActivity : AppCompatActivity() {
             
         } catch (e: Exception) {
             android.util.Log.w("WaterJug", "Error updating button states", e)
+        }
+    }
+    
+    private fun updateWaterSurfaceEffects(jugARatio: Float, jugBRatio: Float) {
+        try {
+            // Show water surface effects when there's water, hide when empty
+            binding.jugAWaterSurface.visibility = if (jugARatio > 0) View.VISIBLE else View.GONE
+            binding.jugBWaterSurface.visibility = if (jugBRatio > 0) View.VISIBLE else View.GONE
+            
+        } catch (e: Exception) {
+            android.util.Log.w("WaterJug", "Error updating water surface effects", e)
         }
     }
 }

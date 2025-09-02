@@ -39,126 +39,125 @@
 26-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:11:9-54
 27        android:supportsRtl="true"
 27-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:12:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.TicTacToe" >
-29-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:13:9-47
-30        <activity
-30-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:15:9-23:20
-31            android:name="com.example.tictactoe.HomeActivity"
-31-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:16:13-41
-32            android:exported="true"
-32-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:17:13-36
-33            android:theme="@style/Theme.TicTacToe" >
-33-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:18:13-51
-34            <intent-filter>
-34-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:19:13-22:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:20:17-69
-35-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:20:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:21:17-77
-37-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:21:27-74
-38            </intent-filter>
-39        </activity>
-40        <activity
-40-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:25:9-28:54
-41            android:name="com.example.tictactoe.MainActivity"
-41-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:26:13-41
-42            android:exported="false"
-42-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:27:13-37
-43            android:theme="@style/Theme.TicTacToe" />
-43-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:28:13-51
-44        <activity
-44-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:30:9-33:54
-45            android:name="com.example.tictactoe.GameActivity"
-45-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:31:13-41
-46            android:exported="false"
-46-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:32:13-37
-47            android:theme="@style/Theme.TicTacToe" />
-47-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:33:13-51
-48        <activity
-48-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:35:9-38:54
-49            android:name="com.example.tictactoe.WaterJugActivity"
-49-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:36:13-45
-50            android:exported="false"
-50-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:37:13-37
-51            android:theme="@style/Theme.TicTacToe" />
-51-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:38:13-51
-52        <activity
-52-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:40:9-43:54
-53            android:name="com.example.tictactoe.EightPuzzleActivity"
-53-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:41:13-48
-54            android:exported="false"
-54-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:42:13-37
-55            android:theme="@style/Theme.TicTacToe" />
-55-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:43:13-51
-56
-57        <provider
-57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-58            android:name="androidx.startup.InitializationProvider"
-58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-59            android:authorities="com.example.tictactoe.androidx-startup"
-59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-60            android:exported="false" >
-60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-61            <meta-data
-61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-62                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-63                android:value="androidx.startup" />
-63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-64            <meta-data
-64-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\4f5476382b08d74338128590f64e470a\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
-65                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-65-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\4f5476382b08d74338128590f64e470a\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
-66                android:value="androidx.startup" />
-66-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\4f5476382b08d74338128590f64e470a\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
-67            <meta-data
-67-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-68                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-68-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-69                android:value="androidx.startup" />
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-70        </provider>
-71
-72        <receiver
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-73            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-74            android:directBootAware="false"
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-75            android:enabled="true"
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-76            android:exported="true"
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-77            android:permission="android.permission.DUMP" >
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-78            <intent-filter>
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-79                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-80            </intent-filter>
-81            <intent-filter>
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-82                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-83            </intent-filter>
-84            <intent-filter>
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-85                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-85-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-86            </intent-filter>
-87            <intent-filter>
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-88                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-89            </intent-filter>
-90        </receiver>
-91    </application>
-92
-93</manifest>
+28        android:theme="@style/Theme.TicTacToe" >
+28-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:13:9-47
+29        <activity
+29-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:15:9-23:20
+30            android:name="com.example.tictactoe.HomeActivity"
+30-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:16:13-41
+31            android:exported="true"
+31-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:17:13-36
+32            android:theme="@style/Theme.TicTacToe" >
+32-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:18:13-51
+33            <intent-filter>
+33-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:19:13-22:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:20:17-69
+34-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:20:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:21:17-77
+36-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:21:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:25:9-28:54
+40            android:name="com.example.tictactoe.MainActivity"
+40-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:26:13-41
+41            android:exported="false"
+41-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:27:13-37
+42            android:theme="@style/Theme.TicTacToe" />
+42-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:28:13-51
+43        <activity
+43-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:30:9-33:54
+44            android:name="com.example.tictactoe.GameActivity"
+44-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:31:13-41
+45            android:exported="false"
+45-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:32:13-37
+46            android:theme="@style/Theme.TicTacToe" />
+46-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:33:13-51
+47        <activity
+47-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:35:9-38:54
+48            android:name="com.example.tictactoe.WaterJugActivity"
+48-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:36:13-45
+49            android:exported="false"
+49-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:37:13-37
+50            android:theme="@style/Theme.TicTacToe" />
+50-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:38:13-51
+51        <activity
+51-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:40:9-43:54
+52            android:name="com.example.tictactoe.EightPuzzleActivity"
+52-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:41:13-48
+53            android:exported="false"
+53-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:42:13-37
+54            android:theme="@style/Theme.TicTacToe" />
+54-->C:\Users\athar\OneDrive\Desktop\Game_center\app\src\main\AndroidManifest.xml:43:13-51
+55
+56        <provider
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+57            android:name="androidx.startup.InitializationProvider"
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+58            android:authorities="com.example.tictactoe.androidx-startup"
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+59            android:exported="false" >
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+60            <meta-data
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+61                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+62                android:value="androidx.startup" />
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\b20e61578bc8a9f2a7607d47138c9494\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+63            <meta-data
+63-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\4f5476382b08d74338128590f64e470a\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+64-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\4f5476382b08d74338128590f64e470a\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+65                android:value="androidx.startup" />
+65-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\4f5476382b08d74338128590f64e470a\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+68                android:value="androidx.startup" />
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+69        </provider>
+70
+71        <receiver
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+72            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+73            android:directBootAware="false"
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+74            android:enabled="true"
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+75            android:exported="true"
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+76            android:permission="android.permission.DUMP" >
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+77            <intent-filter>
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+78                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+79            </intent-filter>
+80            <intent-filter>
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+81                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+82            </intent-filter>
+83            <intent-filter>
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+84                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+85            </intent-filter>
+86            <intent-filter>
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+87                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\athar\.gradle\caches\9.0-milestone-1\transforms\351c92a477d0b20cb729f418754983c1\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+88            </intent-filter>
+89        </receiver>
+90    </application>
+91
+92</manifest>

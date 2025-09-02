@@ -20,7 +20,9 @@ drawable cell_background
 drawable empty_tile_background
 drawable ic_arrow_right
 drawable ic_eight_puzzle
+drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_launcher_monochrome
 drawable ic_tictactoe
 drawable ic_water_jug
 drawable tile_background
