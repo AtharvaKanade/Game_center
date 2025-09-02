@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    
+    <!-- Jug A (left) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="@color/primary"
+        android:strokeWidth="2"
+        android:pathData="M6,4 L6,18 L8,20 L8,18 L8,4 Z"/>
+    
+    <!-- Jug B (right) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="@color/secondary"
+        android:strokeWidth="2"
+        android:pathData="M16,4 L16,18 L18,20 L18,18 L18,4 Z"/>
+    
+    <!-- Water in Jug A -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M6,12 L8,12 L8,18 L6,18 Z"/>
+    
+    <!-- Water in Jug B -->
+    <path
+        android:fillColor="@color/secondary"
+        android:pathData="M16,8 L18,8 L18,18 L16,18 Z"/>
+    
+    <!-- Water drops -->
+    <path
+        android:fillColor="@color/primary"
+        android:pathData="M7,2 A1,1 0 1,1 7,4 A1,1 0 1,1 7,2 Z"/>
+    
+    <path
+        android:fillColor="@color/secondary"
+        android:pathData="M17,2 A1,1 0 1,1 17,4 A1,1 0 1,1 17,2 Z"/>
+</vector>

@@ -1,0 +1,118 @@
+[
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\drawable_ic_eight_puzzle.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\drawable\\ic_eight_puzzle.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\mipmap-mdpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\layout_item_cell.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\layout\\item_cell.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\mipmap-xxhdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\drawable_cell_background.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\drawable\\cell_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\layout_activity_game.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\layout\\activity_game.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\drawable_ic_tictactoe.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\drawable\\ic_tictactoe.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\drawable_empty_tile_background.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\drawable\\empty_tile_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\mipmap-xxxhdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\mipmap-hdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\layout_item_game.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\layout\\item_game.xml"
+    },
+    {
+        "merged": "com.example.tictactoe.app-merged_res-4:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.tictactoe.app-main-6:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\drawable_tile_background.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\drawable\\tile_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\mipmap-xhdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\mipmap-hdpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\drawable_ic_arrow_right.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\drawable\\ic_arrow_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\mipmap-xxxhdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\mipmap-mdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\layout_activity_water_jug.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\layout\\activity_water_jug.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\layout_activity_eight_puzzle.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\layout\\activity_eight_puzzle.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\drawable_water_background.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\drawable\\water_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\drawable_ic_water_jug.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\drawable\\ic_water_jug.xml"
+    },
+    {
+        "merged": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-merged_res-4:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\athar\\.gradle\\daemon\\9.0-milestone-1\\com.example.tictactoe.app-main-6:\\xml\\data_extraction_rules.xml"
+    }
+]

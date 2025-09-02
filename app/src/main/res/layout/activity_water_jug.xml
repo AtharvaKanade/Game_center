@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".WaterJugActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/water_jug_puzzle"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/targetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/target_amount"
+        android:textSize="18sp"
+        android:textColor="@color/on_background"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/movesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moves"
+        android:textSize="16sp"
+        android:textColor="@color/on_background"
+        android:alpha="0.7"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/targetText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Jug A Display -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/jugACard"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/surface"
+        app:layout_constraintTop_toBottomOf="@id/movesText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/jugBCard"
+        app:layout_constraintHorizontal_chainStyle="packed">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jug_a"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/on_surface" />
+
+            <TextView
+                android:id="@+id/jugACapacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5L"
+                android:textSize="14sp"
+                android:textColor="@color/on_background"
+                android:alpha="0.7"
+                android:layout_marginTop="4dp" />
+
+            <View
+                android:id="@+id/jugAWater"
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/water_background"
+                android:alpha="0.8" />
+
+            <TextView
+                android:id="@+id/jugACurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0L"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Jug B Display -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/jugBCard"
+        android:layout_width="120dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="32dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/surface"
+        app:layout_constraintTop_toTopOf="@id/jugACard"
+        app:layout_constraintStart_toEndOf="@id/jugACard"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jug_b"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/on_surface" />
+
+            <TextView
+                android:id="@+id/jugBCapacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3L"
+                android:textSize="14sp"
+                android:textColor="@color/on_background"
+                android:alpha="0.7"
+                android:layout_marginTop="4dp" />
+
+            <View
+                android:id="@+id/jugBWater"
+                android:layout_width="80dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/water_background"
+                android:alpha="0.8" />
+
+            <TextView
+                android:id="@+id/jugBCurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0L"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondary"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/jugACard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Row 1: Fill and Empty -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fillJugAButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="@string/fill_jug"
+                android:textSize="14sp"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/primary" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/emptyJugAButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="@string/empty_jug"
+                android:textSize="14sp"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/primary"
+                android:alpha="0.7" />
+
+        </LinearLayout>
+
+        <!-- Row 2: Pour operations -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pourAtoBButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="@string/pour_jug"
+                android:textSize="14sp"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/accent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/pourBtoAButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="@string/pour_jug_reverse"
+                android:textSize="14sp"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/accent" />
+
+        </LinearLayout>
+
+        <!-- Row 3: Fill and Empty Jug B -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/fillJugBButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="@string/fill_jug"
+                android:textSize="14sp"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/secondary" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/emptyJugBButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="@string/empty_jug"
+                android:textSize="14sp"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/secondary"
+                android:alpha="0.7" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Bottom Buttons -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/newPuzzleButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="@string/new_puzzle"
+            android:textSize="14sp"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/secondary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backToHomeButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="@string/back_to_home"
+            android:textSize="14sp"
+            app:cornerRadius="12dp"
+            app:backgroundTint="@color/on_background" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
